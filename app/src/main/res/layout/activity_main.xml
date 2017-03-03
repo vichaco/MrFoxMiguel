@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.migel.mrfoxmiguel.MyLogin"
+    android:background="@drawable/fondo">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                app:srcCompat="@drawable/fox"
+                android:id="@+id/imageView2"
+                android:layout_weight="0.23" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="199dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/email"
+                    android:textSize="30sp"
+                    android:hint="Email"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/contraseña"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:hint="Password" />
+
+                <Button
+                    android:text="Login!!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/login"
+                    android:background="@drawable/blue_button"
+                    android:onClick="Siguiente" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Aun no te has registrado?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_weight="0.06"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="Registrate!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registrar"
+                android:layout_weight="0.23"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textStyle="normal|italic"
+                android:onClick="Siguiente" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
